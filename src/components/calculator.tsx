@@ -15,9 +15,9 @@ export function Calculator(){
         <div className="container">
             <h1>{process.env.REACT_APP_APP_NAME}</h1>
 
-            <input type="number" min={0}  name="numberOne" value={numberOne} onChange={(event) => setNumberOne(event.target.value)}/> 
+            <input type="number"  name="numberOne" value={numberOne} onChange={(event) => setNumberOne(event.target.value)}/> 
             <p id="plusSing">+</p>
-            <input type="number" min={0} name="numberTwo" value={numberTwo} onChange={(event) => setNumberTwo(event.target.value)} /> <br />
+            <input type="number"  name="numberTwo" value={numberTwo} onChange={(event) => setNumberTwo(event.target.value)} /> <br />
 
             <button onClick={() => sum(numberOne, numberTwo)}>Somar</button>
             <h1 id="result">{result}</h1>
